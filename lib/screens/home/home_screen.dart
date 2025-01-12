@@ -1,7 +1,7 @@
-import 'package:kapicua/widgets/Item_row.dart';
+import 'package:capicua/widgets/Item_row.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:kapicua/models/match.dart';
+import 'package:capicua/models/match.dart';
 
 class HomeScreen extends StatelessWidget {
   final Match provider = Match();
@@ -42,7 +42,7 @@ class HomeScreen extends StatelessWidget {
       create: (BuildContext context) => provider,
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Kapicua'),
+          title: Text('Capicua'),
           backgroundColor: Theme.of(context).colorScheme.surface,
           actions: [
             Consumer<Match>(

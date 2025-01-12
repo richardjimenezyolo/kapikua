@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:kapicua/models/points.dart';
-import 'package:kapicua/models/match.dart';
+import 'package:capicua/models/points.dart';
+import 'package:capicua/models/match.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:uuid/uuid.dart';
