@@ -43,7 +43,11 @@ class ItemRow extends StatelessWidget {
           )
         ],
       ),
-    ).then((c) => completer.complete(false));
+    ).then((ev) {
+      if (!completer.isCompleted) {
+        completer.complete(false);
+      }
+    });
 
     return completer.future;
   }
@@ -60,7 +64,7 @@ class ItemRow extends StatelessWidget {
       },
       child: Container(
         height: 60,
-        color: index % 2 == 0 ? Color(0xFF0f172a) : Color(0xff030712),
+        color: index % 2 == 0 ? Theme.of(context).colorScheme.surface : Theme.of(context).colorScheme.surfaceDim,
         child: IntrinsicHeight(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
